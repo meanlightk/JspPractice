@@ -1,0 +1,12 @@
+2023-05-17 16:51:00,117 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-05-17 16:51:17,532 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-17 16:53:47,669 [main] INFO  org.eclipse.jetty.server.Server - jetty-10.0.12; built: 2022-09-14T01:54:40.076Z; git: 408d0139887e27a57b54ed52e2d92a36731a7e88; jvm 17.0.5+8
+2023-05-17 16:53:47,688 [main] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2023-05-17 16:53:47,714 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@79c01d37{/wse,null,AVAILABLE}
+2023-05-17 16:53:47,731 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@56ff0feb{HTTP/1.1, (http/1.1)}{0.0.0.0:55691}
+2023-05-17 16:53:47,737 [main] INFO  org.eclipse.jetty.server.Server - Started Server@7ffe0471{STARTING}[10.0.12,sto=0] @155677ms
+2023-05-17 18:15:07,412 [Framework stop - Equinox Container: d17ede34-fa4c-4c4c-bc72-418274c2b581] INFO  org.eclipse.jetty.server.Server - Stopped Server@7ffe0471{STOPPING}[10.0.12,sto=0]
+2023-05-17 18:15:07,414 [Framework stop - Equinox Container: d17ede34-fa4c-4c4c-bc72-418274c2b581] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@56ff0feb{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+2023-05-17 18:15:07,435 [Framework stop - Equinox Container: d17ede34-fa4c-4c4c-bc72-418274c2b581] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@79c01d37{/wse,null,STOPPED}
+2023-05-18 09:39:33,167 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-05-18 13:17:47,909 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

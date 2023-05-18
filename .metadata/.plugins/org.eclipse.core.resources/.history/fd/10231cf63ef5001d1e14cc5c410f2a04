@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원 가입창</title>
+<script type="text/javascript">
+function fn_sendMember() { var id = frMember.id.value; var pwd =
+frMember.pwd.value; var name = frMember.name.value; var email =
+frMember.email.value; if(id.length = 00 || id == "") 
+{ alert("비밀번호는 필수입니다."); 
+} else if(pwd.length == 0 || pwd == "") { alert("이름을 필수입니다.");
+} else if(email.length == 0 || pwd == "") { alert("이메일은 필수입니다."); 
+} else {
+frmMember.method = "post" 
+frmMember.action = "member3"
+frmMember.submit();
+}
+}
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
