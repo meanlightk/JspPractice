@@ -12,7 +12,6 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class MemberDAO {
-
 	private Connection con;
 	private PreparedStatement pstmt;
 	private DataSource dataFactory;
@@ -27,9 +26,10 @@ public class MemberDAO {
 		}
 	}
 
-	public List listMembers() {
-		List list = new ArrayList();
+	public List<MemberVO> listMembers() {
+		List<MemberVO> list = new ArrayList<MemberVO>();
 		try {
+			// connDB();
 			con = dataFactory.getConnection();
 			String query = "select * from t_member ";
 			System.out.println("prepareStatememt: " + query);
@@ -58,6 +58,7 @@ public class MemberDAO {
 		return list;
 	}
 
+	// 회원가입
 	public void addMember(MemberVO memberVO) {
 		try {
 			con = dataFactory.getConnection();
@@ -65,16 +66,15 @@ public class MemberDAO {
 			String pwd = memberVO.getPwd();
 			String name = memberVO.getName();
 			String email = memberVO.getEmail();
-
 			String query = "insert into t_member";
 			query += " (id,pwd,name,email)";
-			query += " valuser(?,?,?,?)";
-			System.out.println("prepareStatement: " + query);
+			query += " values(?,?,?,?)";
+			System.out.println("prepareStatememt: " + query);
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);
-			pstmt.setString(1, pwd);
-			pstmt.setString(1, name);
-			pstmt.setString(1, email);
+			pstmt.setString(2, pwd);
+			pstmt.setString(3, name);
+			pstmt.setString(4, email);
 			pstmt.executeUpdate();
 			pstmt.close();
 		} catch (Exception e) {
@@ -85,9 +85,8 @@ public class MemberDAO {
 	public void delMember(String id) {
 		try {
 			con = dataFactory.getConnection();
-
-			String query = "delete from t_member" + "where id=?";
-			System.out.println("prepareStatement:" + query);
+			String query = "delete from t_member" + " where id=?";
+			System.out.println("prepareStatememt:" + query);
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);
 			pstmt.executeUpdate();
@@ -95,6 +94,6 @@ public class MemberDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
+
 }

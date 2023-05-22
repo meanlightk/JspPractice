@@ -53,8 +53,4 @@ public class MemberVO {
 		this.joinDate = joinDate;
 	}
 
-	public int getAge() {
-		return 0;
-	}
-
 }
