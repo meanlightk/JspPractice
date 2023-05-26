@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>안녕하세요. 쇼핑몰 중심 JSP 시작입니다!!</h1><br>
-<%@ include file="duke_image.jsp" %><br>
+<%@ include file="image/duke4.jpg" %><br>
 <h1>안녕하세요. 쇼핑몰 중심 JSP 끝 부분입니다!!!</h1>
 </body>
 </html>
