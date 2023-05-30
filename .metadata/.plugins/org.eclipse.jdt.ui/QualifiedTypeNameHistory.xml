@@ -47,4 +47,5 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="sec02.ex01.MemberVO"/>
 </qualifiedTypeNameHistroy>
